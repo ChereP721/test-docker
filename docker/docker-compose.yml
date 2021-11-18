@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  td_php:
+    image: php:7.4.25-fpm-bullseye
+    volumes:
+      - ../app:/var/www/test-app
+    networks:
+      - td-network
+
+  td_nginx:
+    image: nginx:stable
+    ports:
+      - 9040:80
+    volumes:
+      - ./nginx/logs:/var/log/nginx
+      - ./nginx/configs:/etc/nginx/conf.d
+    networks:
+      - td-network
+
+networks:
+  td-network: ~
