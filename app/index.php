@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>FDSJFJSDHFJKHDSKFJSD</title>
+    <title>Check ssh keys</title>
 </head>
 <body>
 DASDKJAHSJKDHASKJDHKJASHDKJASHJK
